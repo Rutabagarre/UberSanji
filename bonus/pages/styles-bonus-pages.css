@@ -1,0 +1,109 @@
+@font-face {
+    font-family: policeOP;
+    src: url("../../police/onePieceFont.ttf");
+}
+
+body{
+    --couleur-bleu-tres-fonce : #00296B;
+    --couleur-bleu-fonce : #003F88;
+    --couleur-bleu-normal : #00509D;
+    --couleur-bleu-clair : #1e96fc;
+    --couleur-jaune-fonce : #FDC500;
+    --couleur-jaune-clair : #FFD500;
+    margin: 0;
+    background-color: #fff1e6;
+    background-image: url("../../images/carre_bg.png");
+    font-family: 'WorkSans', sans-serif;
+}
+
+/*LIENS*/
+a{text-decoration: none;}
+li a {color: var(--couleur-bleu-fonce)}     /* lien non-visité */
+li a:visited {color: var(--couleur-bleu-fonce)}  /* lien visité */
+li a:hover {color: var(--couleur-jaune-fonce)}   /* lien au survol */
+li a:active {color: var(--couleur-bleu-fonce)}   /* lien sélectionné */
+
+/*HEADER*/
+header{
+    font-family: policeOP, serif;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-bottom: 4vh;
+}
+
+.logo{
+    display: block;
+    text-align: center;
+    margin-top: 50px;
+}
+.boutonRetour{
+    display: flex;
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    color: #001845;
+    font-size: 5rem;
+}
+.titres {
+    display: flex;
+    justify-content: center;
+    font-family: policeOP, serif;
+    font-weight: bold;
+    font-size: 3.5rem;
+    color: var(--couleur-bleu-tres-fonce);
+}
+main h2{
+    font-size: 2.9rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    font-weight: bold;
+    text-align: center;
+}
+main p{
+    font-size: 100%;
+}
+footer{
+    display: flex;
+    justify-content: space-around;
+    background-color: var(--couleur-jaune-fonce);
+    font-size: 2rem;
+    color: var(--couleur-bleu-fonce);
+    font-weight: bold;
+    padding: 10px 0;
+    margin-top: 50px;
+}
+footer img{
+    height: 7rem;
+    width: 7rem;
+}
+/*MEDIA QUERIES
+- Mobile (default) : < 480px
+- Tablet : > 480px
+- Tablet landscape : > 768px
+- Laptop : > 1024px
+- Desktop : > 1600px*/
+@media screen and (min-width: 1600px) {
+    header{
+        height: 97vh;
+    }
+    .logo img{
+        width: 100px;
+        height: 100px;
+    }
+    main{
+        display: flex;
+        justify-content: space-around;
+    }
+    main h2{
+        font-size: 3rem;
+    }
+    main article{
+        width: 400px;
+        margin: 30px;
+    }
+    .banniere img{
+        width: 50%;
+    }
+}

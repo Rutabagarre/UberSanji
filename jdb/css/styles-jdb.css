@@ -1,0 +1,91 @@
+@font-face {
+    font-family: policeOP;
+    src: url("../../police/onePieceFont.ttf");
+}
+
+body{
+    --couleur-bleu-tres-fonce : #00296B;
+    --couleur-bleu-fonce : #003F88;
+    --couleur-bleu-normal : #00509D;
+    --couleur-bleu-clair : #1e96fc;
+    --couleur-jaune-fonce : #FDC500;
+    --couleur-jaune-clair : #FFD500;
+    margin: 0;
+    background-color: #fff1e6;
+    background-image: url("../../images/carre_bg.png");
+    font-family: 'WorkSans', sans-serif;
+}
+/*LIENS*/
+a{text-decoration: none;}
+li a {color: var(--couleur-bleu-fonce)}     /* lien non-visité */
+li a:visited {color: var(--couleur-bleu-fonce)}  /* lien visité */
+li a:hover {color: var(--couleur-jaune-fonce)}   /* lien au survol */
+li a:active {color: var(--couleur-bleu-fonce)}   /* lien sélectionné */
+
+/*HEADER*/
+header{
+    font-family: policeOP, serif;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    background: linear-gradient(to top, #ffffffC0, #ffffff00), url("../../images/paysage.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-bottom: 4vh;
+}
+.boutonRetour{
+    display: flex;
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    color: #001845;
+    font-size: 5rem;
+}
+.logo{
+    display: block;
+    text-align: center;
+    margin-top: 50px;
+}
+
+.titres{
+    display: flex;
+    justify-content: center;
+    font-family: policeOP, serif;
+    font-weight: bold;
+    font-size: 3.5rem;
+    color: var(--couleur-bleu-tres-fonce);
+}
+/*MAIN*/
+main h2{
+    font-size: 2.9rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    font-weight: bold;
+    text-align: center;
+}
+main h3{
+    display: flex;
+    justify-content: center;
+    font-size: 2.5rem;
+    font-weight: normal;
+    text-decoration: underline;
+}
+article{
+    margin-bottom: 30px;
+    font-size: 0.8rem;
+}
+/*FOOTER*/
+footer{
+    display: flex;
+    justify-content: space-around;
+    background-color: var(--couleur-jaune-fonce);
+    font-size: 2rem;
+    color: var(--couleur-bleu-fonce);
+    font-weight: bold;
+    padding: 10px 0 0 0;
+}
+footer img{
+    height: 7rem;
+    width: 7rem;
+}

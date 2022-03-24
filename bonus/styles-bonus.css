@@ -1,0 +1,113 @@
+@font-face {
+    font-family: policeOP;
+    src: url("../police/onePieceFont.ttf");
+}
+
+body{
+    --couleur-bleu-tres-fonce : #00296B;
+    --couleur-bleu-fonce : #003F88;
+    --couleur-bleu-normal : #00509D;
+    --couleur-bleu-clair : #1e96fc;
+    --couleur-jaune-fonce : #FDC500;
+    --couleur-jaune-clair : #FFD500;
+    margin: 0;
+    background-color: #fff1e6;
+    background-image: url("../images/carre_bg.png");
+    font-family: 'WorkSans', sans-serif;
+}
+
+/*LIENS*/
+a{text-decoration: underline var(--couleur-bleu-tres-fonce);}
+li a {color: var(--couleur-bleu-fonce)}     /* lien non-visité */
+li a:visited {color: var(--couleur-bleu-fonce)}  /* lien visité */
+li a:hover {color: var(--couleur-jaune-fonce)}   /* lien au survol */
+li a:active {color: var(--couleur-bleu-fonce)}   /* lien sélectionné */
+
+/*HEADER*/
+header{
+    font-family: policeOP, serif;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    background: linear-gradient(to top, #ffffffC0, #ffffff00), url("../images/equipageVignette.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-bottom: 4vh;
+}
+
+.logo{
+    display: block;
+    text-align: center;
+    margin-top: 50px;
+}
+.boutonRetour{
+    display: flex;
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    color: #001845;
+    font-size: 5rem;
+}
+.titres{
+    display: flex;
+    justify-content: center;
+    font-family: policeOP, serif;
+    font-weight: bold;
+    font-size: 3.5rem;
+    color: var(--couleur-bleu-tres-fonce);
+}
+/*MAIN*/
+article{
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 30px;
+    font-family: policeOP, serif;
+    font-size: 5rem;
+    color: var(--couleur-bleu-tres-fonce);
+    position: relative;
+    margin-bottom: 50px;
+    overflow: hidden;
+}
+main h2{
+    font-size: 500%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    font-weight: bold;
+    text-align: center;
+}
+main a{
+    display: block;
+}
+article img{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    z-index: -1;
+    filter: blur(5px);
+    object-fit: cover;
+}
+#local{
+    font-size: 2rem;
+}
+.local{
+    height: 61vh;
+}
+/*FOOTER*/
+footer{
+    display: flex;
+    justify-content: space-around;
+    background-color: var(--couleur-jaune-fonce);
+    font-size: 2rem;
+    color: var(--couleur-bleu-fonce);
+    font-weight: bold;
+    padding: 10px 0;
+    margin-top: 50px;
+}
+footer img{
+    height: 7rem;
+    width: 7rem;
+}

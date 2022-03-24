@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Projet Web • Uber Sanji</title>
+
+    <!-- Link -->
+    <link rel="icon" type="image/png" sizes="16x16" href="../images/logoSanji.png">
+    <link rel="stylesheet" href="css/styles-sanji.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@200&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/reponsive-sanji-accueil.css">
+    <!-- Script -->
+    <script src="https://kit.fontawesome.com/9ac3ecdf58.js" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="js/comportements.js"></script>
+
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <a href="index.html"><img src="../images/logoSanji.png"></a>
+        </div>
+        <div class="titres">
+            <h1>UBER SANJI</h1>
+        </div>
+        <div class="boutonMobile">
+            <span class="navBouton">
+                <i class="fas fa-hamburger"></i>
+            </span>
+        </div>
+        <ul class="mobileNav" style="left: 0px">
+            <li class="item" id="close">
+                <span><i class="fas fa-times"></i></span>
+            </li>
+            <li class="item">
+                <a href="index.html"><i class="fas fa-home"></i> Accueil</a>
+            </li>
+            <li class="item">
+                <a href="commander.html"><i class="fas fa-utensils"></i> Commander</a>
+            </li>
+            <li class="item" id="cote">
+                <span><i class="fas fa-mobile-alt"></i></span><span class="droitier-gaucher"> Droitier</span>
+            </li>
+            <span class="ligne"></span>
+            <li class="item" id="hub">
+                <a href="../index.html"><i class="fas fa-anchor"></i> Hub</a>
+            </li>
+        </ul>
+    </header>
+    <main>
+        <h2>Trouvez tout les plâts que vous voulez !</h2>
+        <h3>Quelques photos en cuisine</h3>
+            <div class="articles">
+                <article class="cuisine">
+                    <img src="images/cuisine1.jpeg" alt="images/cuisine1.jpeg">
+                    <p>Rôti de mérou rouge avec Luffy</p>
+                </article>
+                <article class="cuisine">
+                    <img src="images/cuisine2.jpeg" alt="images/cusine2.jpeg">
+                    <p>Atelier pâtisserie avec Chopper</p>
+                </article>
+                <article class="cuisine">
+                    <img src="images/cuisine3.png" alt="images/cuisine3.png">
+                    <p>Rôti de poulet avec vin bordelais</p>
+                </article>
+            </div>
+    </main>
+    <footer id="footer-accueil">
+        <p>Bases du Web</p>
+        <img src="../images/logoSanji.png">
+        <p>Arthur Gillier</p>
+    </footer>
+</body>
+</html>

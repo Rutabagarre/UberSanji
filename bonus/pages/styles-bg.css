@@ -1,0 +1,48 @@
+.banniere img{
+    width: 100%;
+}
+#luffy{
+    background: linear-gradient(to top, #ffffffC0, #ffffff00), url("../../images/postLuffy.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#zoro{
+    background: linear-gradient(to top, #ffffffC0, #ffffff00), url("../../images/postZoro.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#nami{
+    background: linear-gradient(to top, #ffffffC0, #ffffff00), url("../../images/postNami.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#usopp{
+    background: linear-gradient(to top, #ffffffC0, #ffffff00), url("../../images/postUsopp.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#sanji{
+    background: linear-gradient(to top, #ffffffC0, #ffffff00), url("../../images/sanjiSoba.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#chopper{
+    background: linear-gradient(to top, #ffffffC0, #ffffff00), url("../../images/postChopper.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#robin{
+    background: linear-gradient(to top, #ffffffC0, #ffffff00), url("../../images/postRobin.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#franky{
+    background: linear-gradient(to top, #ffffffC0, #ffffff00), url("../../images/postFranky.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#brook{
+    background: linear-gradient(to top, #ffffffC0, #ffffff00), url("../../images/postBrook.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Projet Web • Uber Sanji</title>
+
+    <!-- Link -->
+    <link rel="icon" type="image/png" sizes="16x16" href="../images/logoSanji.png">
+    <link rel="stylesheet" href="css/styles-sanji.css">
+    <link rel="stylesheet" href="css/commander.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@200&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/responsive-sanji-commander.css">
+    <!-- Script -->
+    <script src="https://kit.fontawesome.com/9ac3ecdf58.js" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="js/axios.min.js"></script>
+    <script src="js/comportements.js"></script>
+    <script src="js/api.js"></script>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <a href="index.html"><img src="../images/logoSanji.png"></a>
+        </div>
+        <div class="titres">
+            <h1>UBER SANJI</h1>
+        </div>
+        <div class="boutonMobile">
+                <span class="navBouton">
+                    <i class="fas fa-hamburger"></i>
+                </span>
+        </div>
+        <ul class="mobileNav">
+            <li class="item" id="close">
+                <span><i class="fas fa-times"></i></span>
+            </li>
+            <li class="item">
+                <a href="index.html"><i class="fas fa-home"></i> Accueil</a>
+            </li>
+            <li class="item">
+                <a href="commander.html"><i class="fas fa-utensils"></i> Commander</a>
+            </li>
+            <li class="item" id="cote">
+                <span><i class="fas fa-mobile-alt"></i></span><span class="droitier-gaucher"> Droitier</span>
+            </li>
+            <span class="ligne"></span>
+            <li class="item" id="hub">
+                <a href="../index.html"><i class="fas fa-anchor"></i> Hub</a>
+            </li>
+        </ul>
+    </header>
+<main>
+    <h2>Recherchez un plât ou prenez un au hasard !</h2>
+    <div class="searchbar">
+        <form class="search-field" action="javascript:void(0)" onsubmit="getInputRecipe()">
+            <label>
+                <input class="rechercherInput" type="text" placeholder="Rechercher un plat">
+                <button class="rechercherSubmit" type="submit"><i class="fas fa-search"></i></button>
+            </label>
+        </form>
+        <form class="random-field" action="javascript:void(0)" onclick="getRandomRecipe()">
+            <label>
+                <button class="randomButton" type="button">Au hasard !</button>
+            </label>
+        </form>
+    </div>
+    <div class="resultContainer">
+    </div>
+</main>
+<footer>
+    <p>Bases du Web</p>
+    <img src="../images/logoSanji.png">
+    <p>Arthur Gillier</p>
+</footer>
+</body>
+</html>

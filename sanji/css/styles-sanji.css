@@ -1,0 +1,145 @@
+@font-face {
+    font-family: policeOP;
+    src: url("../../police/onePieceFont.ttf")
+}
+body{
+    --couleur-bleu-tres-fonce : #00296B;
+    --couleur-bleu-fonce : #003F88;
+    --couleur-bleu-normal : #00509D;
+    --couleur-bleu-clair : #1e96fc;
+    --couleur-jaune-fonce : #FDC500;
+    --couleur-jaune-clair : #FFD500;
+    margin: 0;
+    background-color: #fff1e6;
+    background-image: url("../../images/carre_bg.png");
+    font-family: 'WorkSans', sans-serif;
+}
+/*HEADER*/
+.logo a{
+    display: flex;
+    justify-content: center;
+}
+.logo a img{
+    width: 25%;
+}
+header{
+    background: linear-gradient(to top, #ffffffC0, #ffffff00), url("../../images/sanjiSoba.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.titres h1{
+    display: flex;
+    justify-content: center;
+    font-family: policeOP, serif;
+    font-size: 800%;
+    color: var(--couleur-bleu-tres-fonce);
+    margin-right: 12rem;
+    margin-left: 12rem;
+}
+.boutonMobile{
+    display: flex;
+    position: absolute;
+    top: 18%;
+    left: 5%;
+    color: #001845;
+    font-size: 5rem;
+}
+header ul{
+    background-color: #fff1e6;
+    display: none;
+    flex-direction: column;
+    position: fixed;
+    bottom: 0;
+    width: 500px;
+    height: 100vh;
+    overflow-y: scroll;
+    padding: 0 40px;
+    background-image: url("../../images/carre_bg.png");
+    color: var(--couleur-bleu-fonce);
+}
+.item{
+    font-size: 4rem;
+    margin-top: 30px;
+    list-style-type: none;
+}
+#close{
+    font-size: 5rem;
+    color: var(--couleur-jaune-fonce);
+    display: flex;
+    flex-direction: row-reverse;
+}
+.ligne{
+    display: block;
+    width: 80%;
+    height: 5px;
+    background-color: var(--couleur-bleu-tres-fonce);
+    margin-bottom: 10px;
+    margin-top: 40px;
+}
+.cote{
+    cursor: pointer;
+}
+/*LIENS*/
+a{text-decoration: none;}
+li a {color: var(--couleur-bleu-fonce)}     /* lien non-visité */
+li a:visited {color: var(--couleur-bleu-fonce)}  /* lien visité */
+li a:hover {color: var(--couleur-jaune-fonce)}   /* lien au survol */
+li a:active {color: var(--couleur-bleu-fonce)}   /* lien sélectionné */
+/*MAIN*/
+main{
+    max-width:1280px;
+    min-height:100%;
+    margin:0 auto;
+    padding-bottom: 8rem;
+}
+main h2{
+    font-size: 2.1rem;
+    display: flex;
+    justify-content: center;
+    font-weight: bold;
+}
+#boutonCommander{
+    font-size: 1.8rem;
+    display: flex;
+    justify-content: center;
+    background-color: var(--couleur-jaune-fonce);
+}
+main h3{
+    display: flex;
+    justify-content: center;
+    font-size: 2rem;
+    font-weight: normal;
+    text-decoration: underline;
+}
+article{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+article img{
+    width: 600px;
+    height: 700px;
+}
+article p{
+    font-size: 1.8rem;
+}
+/*FOOTER*/
+footer{
+    display: flex;
+    justify-content: space-around;
+    background-color: var(--couleur-jaune-fonce);
+    font-size: 2rem;
+    color: var(--couleur-bleu-fonce);
+    font-weight: bold;
+    padding: 10px 0 0 0;
+    position:fixed;
+    bottom:0;
+    width:100%;
+}
+footer img{
+    height: 7rem;
+    width: 7rem;
+}
+#footer-accueil{
+    position: relative;
+}

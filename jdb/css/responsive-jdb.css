@@ -1,0 +1,32 @@
+/*- Mobile (default) : < 480px
+- Tablet : > 480px
+- Tablet landscape : > 768px
+- Laptop : > 1024px
+- Desktop : > 1600px*/
+@media screen and (min-width: 1600px) {
+    header{
+        height: 97vh;
+    }
+    .logo img{
+        width: 100px;
+        height: 100px;
+    }
+    main h2{
+        font-size: 2rem;
+    }
+    .articles{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    main article{
+        background-color: rgba(200, 200, 200, .4);
+        width: 15%;
+    }
+    article h3{
+        font-size: 1.3rem;
+    }
+    article p{
+        margin: 5px;
+    }
+}

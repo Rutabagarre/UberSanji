@@ -1,0 +1,78 @@
+body{
+    --couleur-bleu-tres-fonce : #00296B;
+    --couleur-bleu-fonce : #003F88;
+    --couleur-bleu-normal : #00509D;
+    --couleur-bleu-clair : #1e96fc;
+    --couleur-jaune-fonce : #FDC500;
+    --couleur-jaune-clair : #FFD500;
+    background-color: #fff1e6;
+    margin: 0;
+}
+/*Barre de recherche*/
+.searchbar{
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+.search-field {
+    background-color: var(--couleur-jaune-fonce);
+    border-radius: 25px;
+    padding: 1.5rem 2rem;
+    margin-bottom: 10%;
+    width: 60%;
+}
+.rechercherInput{
+    width: 80%;
+    background: none;
+    border: none;
+    color: var(--couleur-bleu-normal);
+    font-size: 2rem;
+}
+.rechercherInput:focus{
+    outline: none;
+}
+.rechercherInput::placeholder{
+    color: var(--couleur-bleu-fonce);
+}
+.rechercherSubmit{
+    cursor: pointer;
+    color: white;
+    border: none;
+    background: none;
+    font-size: 2rem;
+    margin-left: 2.5rem;
+}
+/*Random*/
+.random-field{
+    background-color: var(--couleur-jaune-fonce);
+    border-radius: 25px;
+    padding: 1.5rem 2rem;
+    margin-bottom: 10%;
+}
+.randomButton{
+    background: none;
+    border: none;
+    color: var(--couleur-bleu-normal);
+    font-size: 2rem;
+}
+/*Recettes*/
+.listeRecette{
+    display: flex;
+    flex-direction: column;
+    align-content: space-around;
+}
+.recette{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    background-color: #ffffffC0;
+    margin-bottom: 20px;
+    border-radius: 10px;
+}
+.recette img{
+    border-radius: 10px 10px 0 0;
+}
+.recette h2{
+    font-size: 2.5rem;
+    color: var(--couleur-bleu-fonce);
+}
